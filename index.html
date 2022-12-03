@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Enter code.</h1>
+        <input id="pass_code">
+        <button type="button" id="myBtn" onclick="getPass()">Submit</button>
+
+        <script>
+            //written by Benjamin
+            //if your smart enough to go into inspect and look at my not very secure code, you deserve the password.
+
+            function getPass(){
+            pass = document.getElementById('pass_code').value
+            if (pass == 'GidenStoleMyJerky') {
+                window.location.href = "accepted.html"
+            }
+            else {
+                window.alert("Incorrect password, please try again.")
+            }
+        }
+        </script>
+    </body>
+</html>
